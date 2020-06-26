@@ -1,0 +1,74 @@
+body{
+    background-image: url(https://i.pinimg.com/736x/fa/67/83/fa678391cf0270a5b6290ff370f1bb34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color:orange;
+    background-color: rgb(139, 102, 153);
+    height: 90px;
+    padding: 20px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+   
+}
+.container{
+    text-align: center;
+    background-color: rgb(153, 152, 102); 
+    max-width: fit-content;
+}
+    
+h2{
+    font: bolder;
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 20px ;
+    animation-name: example;
+    animation-duration:1s;
+    animation-iteration-count:infinite;
+    width:auto;
+ 
+}
+   
+  
+@keyframes example {
+    from {background-color:yellow;}
+    to {background-color: orange;}
+  }
+   
+  h3{
+    font-family: 'Times New Roman', Times, serif; 
+    font-style: oblique;
+    color: brown;
+    padding: 20px ;
+  }
+p{
+    margin-top: 0cm;text-align: center;
+    color:wheat;
+    height: 140px;
+    padding: 40px ;
+    font-family: cursive;
+    font-style: italic
+}
+h6{
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color: rgb(255, 115, 0);}
+}
+
+ul{
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+} 

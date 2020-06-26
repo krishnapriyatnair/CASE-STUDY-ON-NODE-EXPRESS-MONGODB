@@ -1,0 +1,35 @@
+body{
+    background-image: url(https://cdn4.vectorstock.com/i/1000x1000/75/38/background-wave-vector-1847538.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+h1{
+    
+
+    text-align: left;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px blue;
+     height: 100px;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+
+}
+
+h6{
+    font-style: italic;
+    font-family: cursive,fantasy;
+}
+li{
+    display: inline;
+   
+}
+.footer{
+    background-color:  rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+}

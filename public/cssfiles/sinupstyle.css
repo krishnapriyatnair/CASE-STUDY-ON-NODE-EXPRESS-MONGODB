@@ -1,0 +1,24 @@
+
+body{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQhEp8xAcrWaBO6c8nLzY-tvU4mSGV8WXVeDqjaaUQu8PQ4mR4l);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+     text-align: center;
+     color:blueviolet;
+
+     padding: 40px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-style: italic;
+}
+h5{
+    padding: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.footer{
+    background-color:  rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+}

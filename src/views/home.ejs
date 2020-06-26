@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="/cssfiles/lmsstyle.css">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body> 
+  
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav.length-3 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="/adminlogin" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true">AdminLogin</a>
+          <a href="/signUp" class="btn btn-success  mr-sm-2" role="button" aria-pressed="true">SignUp</a>
+           <a href="/" class="btn btn-success my-2 my-sm-7" role="button" aria-pressed="true">Login</a>
+         </form>
+      </div>
+    </nav>
+  </header> 
+  
+     
+    <section id="pr_library.jpg">
+      
+
+    <h1>
+      <marquee behavior="scroll" direction="left"> A Home for your favourite books !!!</marquee> 
+      </h1>
+
+ <br>   
+ <br>  
+<br>
+<div class="container">
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card"style="width: 18rem height: 20rem;">
+            <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTOSzq2kPGER4N283bGqfEkEmvXRwGFVuIt7uJbBszzyn3dP1dG" alt="Card image cap">
+           <div class="card-body">
+            <h5 class="card-title">For Readers</h5>
+            <p class="card-text">Love Reading? Browse through our books to discover new books.</p>
+            <a href="/books" class="btn btn-dark">Click here</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card"style="width: 18 rem height: 20rem;">
+          <img class="card-img-top" src="https://assets.nst.com.my/images/articles/3ntdiary_1527989936.jpg" >
+          <div class="card-body">
+            <h5 class="card-title">For Authors</h5>
+            <p class="card-text">List your books for free so our readers can discover your books.</p>
+            <a href="/adminlogin" class="btn btn-dark">Click here</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/lmsjs.js"></script>
+</body>
+</html>

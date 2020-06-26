@@ -1,0 +1,67 @@
+body{
+    background-image: url(https://i.pinimg.com/736x/fa/67/83/fa678391cf0270a5b6290ff370f1bb34.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    text-align: center;
+    color: yellow;
+    background-color: rgb(153,102,153);
+    height: 90px;
+    padding: 20px ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 10rem;
+    text-shadow: rgb(255, 0, 0) 1px 0 10px;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {color: rgb(255, 123, 0);}
+}
+    
+h5{
+  text-align: center;
+  color:black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0%;
+  margin: 0cm;
+}
+
+
+.column {
+    float: center;
+     width: 50%;
+    padding: 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding in columns */
+  .row {margin: 0 -5px;}
+  
+ 
+   
+
+  .card {
+    box-shadow: 0 4px 8px 0 darkgoldenrod; /* this adds the "card" effect */
+    text-align: justify;
+    background-color:burlywood;
+    width:12rem; 
+    height: 17 rem;
+    
+    
+  }
+  .card-img-top{
+   width:12rem; height: 15rem; 
+   padding: 30px;
+  } 
+  .footer{
+    background-color: rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+}
+
+
+

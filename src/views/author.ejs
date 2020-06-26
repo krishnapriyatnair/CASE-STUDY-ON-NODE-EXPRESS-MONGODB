@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author</title>
+    <link rel="stylesheet" href="/cssfiles/authorsstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav.length-3 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="/adminlogin" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true">AdminLogin</a>
+          <a href="/signUp" class="btn btn-success  mr-sm-2" role="button" aria-pressed="true">SignUp</a>
+           <a href="/" class="btn btn-success my-2 my-sm-7" role="button" aria-pressed="true">Login</a>
+         </form>
+      </div>
+    </nav>
+  </header>  
+<h1>
+    Popular Authors 
+</h1>
+<section id ="section1">
+
+<div class="container">
+    <br>
+    <div class="row">
+    
+       
+      <div class="card mb-3" style="max-width: 740px;">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img src="/images/<%=author.image%>" class="card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-text"><%=author.name%> </h2>
+              <br>
+              <p> <%=author.bio%></p>
+              <ul>
+                <li>
+                  Noted works:<h5><%=author.works%></h5>
+                </li>
+                <li>
+                  Awards:<h5><%=author.awards%></h5> 
+                </li>
+              </ul>
+              <br>
+              <a href="<%=author.link%> " class="card-link" target="_blank">Read More</a>
+              
+              <div id="bottom-right">
+                <a href="/updateauthor/edit/<%=author._id%>" class="btn btn-outline-success  mr-sm-2"role="button">Update</a>
+        
+                <a href="/author/delete/<%=author._id%>" class="btn btn-outline-success  mr-sm-2"role="button">Delete</a>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</div>      
+</div>
+</section>
+<br>
+<br>
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/lmsjs.js"></script>
+
+</body>
+</html>

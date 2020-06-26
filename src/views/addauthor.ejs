@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Author</title>
+    <link rel="stylesheet" href="/cssfiles/publishstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav1.length-3 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav1[i].link%>"><%=nav1[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="/signUp" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true">SignUp</a>
+           <a href="/" class="btn btn-outline-success my-2 my-sm-7" role="button" aria-pressed="true">Login</a>
+         </form>
+      </div>
+    </nav>
+  </header> 
+
+      <section id="author">
+        
+        <h1><marquee behavior="scroll" direction="left">Launch a new realse here!!!</marquee></h1>
+<div class="container">
+          <h2><%=title%> </h2>
+       
+<form  method="POST"   action="/adminauthor/add" >
+  <div class="form-group row">
+    <label for="name" class="col-sm-2 col-form-label">Name</label>
+    <input type="text"  id="name" name="name">
+  </div>
+  <div class="form-group row">
+    <label for="works" class="col-sm-2 col-form-label">Works</label>
+    <input type="text" id="works" name="works">
+    
+  </div>
+  <div class="form-group row">
+    <label for="awards" class="col-sm-2 col-form-label">Awards</label>
+    <input type="text"  name="awards">
+  </div>
+  <div class="form-group row">
+    <label for=" bio" class="col-sm-2 col-form-label"> Bio</label>
+    <input type="text"  name="bio">
+  </div>
+  <div class="form-group row">
+    <label for="image" class="col-sm-2 col-form-label">Image</label>
+    <input type="file" name="image">
+  </div>
+
+  <div class="form-group row">
+    <label for="Choosefile" class="col-sm-2 col-form-label">link</label>
+    <input type="url" name="link">
+  </div>
+  <div class="form-group row">
+    <label for="submit" class="col-sm-2 col-form-label"></label>
+  <button type="submit" class="btn btn-primary">Add Author</button>
+</div>
+
+    </form>
+
+  
+
+</section>
+ 
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/publish.js"></script>
+<script src="/js/lmsjs.js"></script>
+
+
+</body>
+</html>

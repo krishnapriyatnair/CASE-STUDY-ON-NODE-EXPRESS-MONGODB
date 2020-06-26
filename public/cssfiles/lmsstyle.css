@@ -1,0 +1,50 @@
+body{
+background-image: url(https://imgix.bustle.com/uploads/image/2018/4/10/74d4a77d-aeb5-48a0-ae6f-ff69443ee571-stocksy_txp706983b1ucp100_small_322550-2.jpg?w=970&h=546&fit=crop&crop=faces&auto=format&q=70);
+background-repeat:no-repeat;
+background-size:cover;
+}
+
+
+h1{
+    text-align: left;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px blue;
+     height: 100px;
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    animation-name: example;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes example {
+    from {background-color: rgb(0, 255, 179);}
+    to {background-color: rgb(255, 208, 0);}
+    50% {color: rgb(255, 123, 0);}
+  }
+
+.card{
+    border-color: black;
+     border-radius: 20px; 
+     box-shadow: 3px 3px brown, -1em 0 .4em rgb(222, 213, 135); 
+}
+.card-body{
+ background-color: burlywood;
+}
+.card-img-top{
+    border-radius: 25% 10%;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+}
+img:hover {
+    transform: scaleX(-1);
+  }
+
+
+   
+.footer{
+    background-color:  rgba(0, 0, 0, 0.74);
+    color:blue;
+    padding: 30px;
+    align-items: stretch;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="/cssfiles/faq.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <header id='menu'>
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-dark">
+      <a class="navbar-brand" href="#">
+        <img src="/images/books-logo.jpg" width="30px" height="30px" alt="">
+      </a>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto mt-2 mt-lg-0">
+          <%for(var i=0;i<nav.length-3 ;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].name%></a>
+          </li>
+          <%}%>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a href="/adminlogin" class="btn btn-outline-success  mr-sm-2" role="button" aria-pressed="true">AdminLogin</a>
+          <a href="/signUp" class="btn btn-success  mr-sm-2" role="button" aria-pressed="true">SignUp</a>
+           <a href="/" class="btn btn-success my-2 my-sm-7" role="button" aria-pressed="true">Login</a>
+         </form>
+      </div>
+    </nav>
+  </header>     
+      <h1>
+        Frequently Asked Questions
+      </h1>
+      
+      <h2>1. How Can I Get my Favorite Books?</h2>
+      <p>It is as easy as getting your favorite lollipop from the candy shop at the corner of street. Just select the books you want, add them to your cart, checkout </p>
+<h2>
+  2. How to make the payment?
+</h2>
+<p> E-books are totally free for members.Payment only for hard copies.you can pay using any of the available online modes of payment. After your payment has been received, your order shall be processed immediately.  </p>
+<h2>3. What about quality of Pre- Loved books?</h2>
+<p>Don't worry at all. Book lovers always keep their books in best conditions. Also, we inspect every book closely before delivering. So you can be sure that the book you ordered will be as good as new</p>
+
+
+    </section>
+    <br>
+<br>
+<br>
+<br>
+<div class="footer">
+     <div class="row">
+          <div class="col-sm-3">
+             <a href="#" onclick=evenalert()>About us</a>
+             </div>
+          <div class="col-sm-3">
+  
+             <a href="#" onclick=evenalert2()>Contact us</a>
+           </div>
+  
+           <div class="col-sm-3">
+  
+            <a href="#" onclick=evenalert3()>Donate</a>
+          </div>
+         <div class="col-sm-3">
+          <a href="/faq" >FAQ</a>
+         </div>
+      </div>
+</div>
+<script src="/js/lmsjs.js"></script>
+</body>
+</html> 
